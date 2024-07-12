@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Protected</title>
+</head>
+<body>
+    <h2>Enter Password</h2>
+    <input type="password" id="password" />
+    <button onclick="checkPassword()">Submit</button>
+    <p id="error"></p>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            if (password === '111819') {
+                window.location.href = 'letter.html';
+            } else {
+                document.getElementById('error').innerText = 'try again.';
+            }
+        }
+    </script>
+</body>
+</html>
