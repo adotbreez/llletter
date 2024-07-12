@@ -14,21 +14,21 @@
     </style>
 </head>
 <body>
-    <h2>Enter Password</h2>
+    <h2>enter password</h2>
     <input type="password" id="password" />
-    <button onclick="checkPassword()">Submit</button>
+    <button onclick="checkPassword()">submit</button>
     <p id="error"></p>
 
     <script>
         function checkPassword() {
             const password = document.getElementById('password').value;
-            if (password === '111819') {
+            if (password === '111819') { // Replace 'your_password' with the actual password
                 document.getElementById('error').innerText = '';
                 setTimeout(() => {
                     window.location.href = 'letter.html';
                 }, 1000); // 1-second delay for smooth transition
             } else {
-                document.getElementById('error').innerText = 'Incorrect password. Try again.';
+                document.getElementById('error').innerText = 'try again.';
             }
         }
     </script>
