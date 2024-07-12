@@ -8,6 +8,7 @@
             color: white;
             font-family: 'Courier New', Courier, monospace;
             white-space: pre-wrap;
+            margin: 20px;
         }
         #letter {
             margin: 20px;
@@ -39,27 +40,24 @@ you know i really do wish for love to find you again, i wish for you to experien
 
 even when i really did want to, i couldn’t get over you. i tried forcing myself away, didn’t work, i even hoped you’d do something that would make me hate you but you never did. i was genuinely baffled at how you carried yourself. like royalty. you continued to be my perception of the ideal woman time and time again. part of me wishes that i could hate you just like exes usually do so i could get over you but i know i never would. it’s ridiculous i still feel so immature but the way i feel about you makes me feel so human, so real. like nothing else even matters. im doing fine but even at my best i always ache for you at my worst. i’m not begging for you back, im not asking for us to talk again, but khayal, you must know this must only be touched by your eyes: what i did that night wasn’t my choice. i’m referring to that text i sent you of “i can’t do whatever we are anymore” it was not my choice. it’s a lot to explain but if i could summarize, my family made that decision. i told them about my situation and how i was still feeling about you and i think out of fear for me going back to how i was mentally they essentially forced me away from you. by revealing this to you i’m not asking for anything. i know regardless of who’s responsible for what, our time is up. and i’m sorry. i wish i had stayed quiet to my family. you know if it was up to me i would’ve chosen you in all trillion universes. if i could relive everything knowing how it’d end i’d relive it the rest of my life on repeat just to experience the euphoria you brought me again. i remember the last night i brought you jamba. you looked stunning and i wish i’d had the courage to ask to hug you like id asked that one time at your workplace. i had quite literally snuck out in a sense to bring you that, but it was so worth it. i kid you not when i got home i was stuck in my car on facetime with my friends for an hour just trying to explain to them how i felt, just in awe at the sight of you. im obsessed with every little detail, from the way your glasses rest on your nose to the way your lips form the words when you speak. my heart breaks a little each day because now i feel like since we’re not in school ill never see you again and my memory will slowly, slowly fade of you. i don’t even think i have any pictures of us at all and the thought that they’re all gone makes me genuinely sick to my stomach.
 
-i’m so sorry so so sorry a million times over. i want to make this super long but im afraid you’ll lose interest and won’t read all of it so i’ll just say that, even though it makes me want to puke, i do hope your faith in love rekindles and your next man gives you everything you could’ve asked for and more. i wish that he’ll be 100x the man that i could never be for you while i had you and that he treats you with all the love that you deserve. i wish i would’ve had the courage to tell you why i did what i did sooner so maybe, just maybe i could love you like that again just for a little bit. but i thought you’d probably be happier if i didnt. but if i ever marry id be blessed from god if she was half of the woman that you are. and also seeing you smile was okay, even if it was from afar. also you know that if you need, i will kill whoever your new man may end up being. i’m so serious this isn’t for laughs. but like i said before like i know that im never gonna be the first choice for anything but genuinely i just need you to know that im always 1 text or 1 call away. bored? call me. hungry? call me. need advice? call me. need a ride? call me? is it an emergency? call me. took a picture of a pretty flower or sunset and have no one else to send it to? send it to me. doesn’t even have to be as friends, it can be as strangers. no matter where life has us drifting to i’m always gonna be here and you know exactly where to find me.
+i’m so sorry so so sorry a million times over. i want to make this super long but im afraid you’ll lose interest and won’t read all of it so i’ll just say that, even though it makes me want to puke, i do hope your faith in love rekindles and your next man gives you everything you could’ve asked for and more. i wish that he’ll be 100x the man that i could never be for you while i had you and that he treats you with all the love that you deserve. i wish i would’ve had the courage to tell you why i did what i did sooner so maybe, just maybe i could love you like that again just for a little bit. but i thought you’d probably be happier if i didnt. but if i ever marry id be blessed from god if she was half of the woman that you are. and also seeing you smile was okay, even if it was from afar. also you know that if you need, i will kill whoever your new man may end up being. i’m so serious this isn’t for laughs. but like i said before like i know that im never gonna be the first choice for anything but genuinely i just need you to know that im always 1 text or 1 call away. bored? call me. hungry? call me. need advice? call me. need a ride? call me. is it an emergency? call me. took a picture of a pretty flower or sunset and have no one else to send it to? send it to me. doesn’t even have to be as friends, it can be as strangers. no matter where life has us drifting to i’m always gonna be here and you know exactly where to find me.
 
 you know if you ever don’t know how i feel you have the book to remind you.
 
 but on a different note, please take care of yourself. you’re a genuine blessing to this earth and anyone would be gifted to call you their friend, their teacher, their colleague, their coworker, etc. you have a certain trait to you that feels like sunshine when people are around you, hone it and continue to use it to inspire those you care about. you are so so so so loved, and i’m sure you realize it. never stop smiling never stop making others smile i’m so so so so proud of you. life will bring you great things and love will find you, don’t ever lose hope in that cycle. i wish nothing but happiness and good health for you and your family and loved ones. i hope college life will treat you well and hopefully summer life as well, although im not sure when you’ll end up reading this. it’ll probably be sitting here for a while, just like the envelope in my desk with the stuff that was in it.
 keep being yourself
-        
+
 thank you,
 ayden`;
+    let index = 0;
 
-        let index = 0;
-
-        function typeLetter() {
-            if (index < letterContent.length) {
-                document.getElementById('letter').innerHTML += letterContent.charAt(index);
-                index++;
-                setTimeout(typeLetter, 100); // Adjust speed here
-            }
+    function typeLetter() {
+        if (index < letterContent.length) {
+            document.getElementById('letter').innerHTML += letterContent.charAt(index);
+            index++;
+            setTimeout(typeLetter, 20); // Adjust speed here
         }
+    }
 
-        window.onload = typeLetter;
-    </script>
-</body>
-</html>
+    window.onload = typeLetter;
+</script>
