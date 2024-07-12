@@ -2,6 +2,16 @@
 <html>
 <head>
     <title>Password Protected</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #error {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h2>Enter Password</h2>
@@ -13,9 +23,12 @@
         function checkPassword() {
             const password = document.getElementById('password').value;
             if (password === '111819') {
-                window.location.href = 'letter.html';
+                document.getElementById('error').innerText = '';
+                setTimeout(() => {
+                    window.location.href = 'letter.html';
+                }, 1000); // 1-second delay for smooth transition
             } else {
-                document.getElementById('error').innerText = 'try again.';
+                document.getElementById('error').innerText = 'Incorrect password. Try again.';
             }
         }
     </script>
